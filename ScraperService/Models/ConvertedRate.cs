@@ -9,9 +9,9 @@ namespace ScraperService.Models
     public class ConvertedRate
     {
         public string CurrencyName { get; set; }
-        public decimal Amount { get; set; }
+        public decimal? Amount { get; set; }
 
-        public ConvertedRate(string currencyName, decimal amount)
+        public ConvertedRate( string currencyName, decimal? amount)
         {
             CurrencyName = currencyName;
             Amount = amount;
