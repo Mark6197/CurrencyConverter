@@ -10,6 +10,5 @@ namespace ScraperService
         Task<IList<Currency>> GetAllCurrenciesAsync();
         Task<IList<ConvertedRate>> GetConvertedRatesAsync(int sourceCurrency, int amount, DateTime date, int[] currencies);
         Task<IList<RatesPerDate>> GetRatesPerDatesAsync(DateTime strartDate, DateTime endDate, int[] currencies);
-
     }
 }
